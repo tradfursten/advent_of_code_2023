@@ -20,6 +20,15 @@ bool isAlpha(String? s) {
   return _alpha.hasMatch(s);
 }
 
+bool isPrime(int n) {
+  for (var i = 2; i <= n / i; ++i) {
+    if (n % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
 // From Wikipedia, Heaps algorithm
 List<List<int>> getPermutations(List<int> startList) {
   List<List<int>> perms = [];
@@ -71,4 +80,9 @@ int findGcd(int n1, int n2) {
     larger = temp;
   }
   return larger;
+}
+
+void printToFile(String fileName, List<String> lines) async {
+  File file = File(fileName);
+  await file.writeAsString(lines.join('\n'));
 }

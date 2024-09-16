@@ -24,11 +24,19 @@ class LinePos {
     switch (command.substring(0, 1)) {
       case 'U':
         return moveUp();
+      case 'N':
+        return moveUp();
       case 'D':
+        return moveDown();
+      case 'S':
         return moveDown();
       case 'L':
         return moveLeft();
+      case 'W':
+        return moveLeft();
       case 'R':
+        return moveRight();
+      case 'E':
         return moveRight();
       default:
         throw Exception('Wrong command');
@@ -105,5 +113,47 @@ class LinePos {
 
   List<LinePos> getNeighbours() {
     return [moveUp(), moveLeft(), moveDown(), moveRight()];
+  }
+
+  static String getOppositeDirection(String direction) {
+    switch (direction) {
+      case 'N':
+        return 'S';
+      case 'E':
+        return 'W';
+      case 'S':
+        return 'N';
+      case 'W':
+        return 'E';
+      case 'U':
+        return 'D';
+      case 'L':
+        return 'R';
+      case 'R':
+        return 'L';
+      case 'D':
+        return 'U';
+      default:
+        return '';
+    }
+  }
+
+  LinePos moveDist(int length, String directionStr) {
+    switch (directionStr) {
+      case 'U':
+      case 'N':
+        return LinePos(col, row - length);
+      case 'E':
+      case 'R':
+        return LinePos(col + length, row);
+      case 'S':
+      case 'D':
+        return LinePos(col, row + length);
+      case 'W':
+      case 'L':
+        return LinePos(col - length, row);
+      default:
+        throw ArgumentError('Wrong direction str');
+    }
   }
 }

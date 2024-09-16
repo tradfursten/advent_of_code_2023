@@ -1,9 +1,9 @@
 [submodule "emilpriver-ocaml"]
 	path = emilpriver-ocaml
-	url = git@github.com:emilpriver/advent-of-code.git
+	url = https://github.com/emilpriver/advent-of-code.git
 [submodule "digimatic-cpp"]
 	path = digimatic-cpp
-	url = git@github.com:digimatic/advent_of_code_2023.git
+	url = https://github.com/digimatic/advent_of_code_2023.git
 [submodule "pin2t-kotlin"]
 	path = pin2t-kotlin
 	url = https://github.com/pin2t/aoc2023
@@ -12,7 +12,37 @@
 	url = https://github.com/johan1a/advent-of-code-2023.git
 [submodule "albert-arvidsson-polyglot"]
 	path = albert-arvidsson-polyglot
-	url = git@github.com:scmx/advent-of-code-polyglot.git
+	url = https://github.com/scmx/advent-of-code-polyglot.git
 [submodule "simon-nystrom-elixir"]
 	path = simon-nystrom-elixir
-	url = git@github.com:simon-nystrom/adventofcode-2023.git
+	url = https://github.com/simon-nystrom/adventofcode-2023.git
+[submodule "yxhuvud-crystal"]
+	path = yxhuvud-crystal
+	url = https://github.com/yxhuvud/aoc23
+[submodule "kv-geijer-zote"]
+	path = kv-geijer-zote
+	url = https://github.com/KvGeijer/advent-of-zote-2023.git
+[submodule "ygge-java"]
+	path = ygge-java
+	url = https://github.com/ygge/adventofcode2023.git
+[submodule "albertdahlin-elm"]
+	path = albertdahlin-elm
+	url = https://github.com/albertdahlin/elm-advent-of-code.git
+[submodule "digimatic-rust"]
+	path = digimatic-rust
+	url = https://github.com/digimatic/advent_of_code_2023_rust.git
+[submodule "jofafrazze-csharp"]
+	path = jofafrazze-csharp
+	url = https://github.com/jofafrazze/advent_of_code_2023.git
+[submodule "ingo-rust"]
+	path = ingo-rust
+	url = https://github.com/ingomancer/AoC2023.git
+[submodule "mlogic1-cpp"]
+	path = mlogic1-cpp
+	url = https://github.com/mlogic1/advent-of-code-2023.git
+[submodule "emlun-rust"]
+	path = emlun-rust
+	url = https://github.com/emlun/adventofcode-2023.git
+[submodule "AxlLind-rust"]
+	path = AxlLind-rust
+	url = https://github.com/AxlLind/AdventOfCode2023.git
